@@ -1,6 +1,6 @@
 # Selene
 
-Selene is a minimal open source ghost theme.
+Selene is a minimal open source ghost theme with a timeline style and infinite scrolling.
 
 ![Blog image](/blog.png?raw=true)
 ![Blog image](/post.png?raw=true)

@@ -21,6 +21,11 @@
 }
 .post-content{
   padding: 15px;
+  .full-img{
+    max-width: 100%;
+    width: auto;
+    margin: 0;
+  }
 }
 .post-footer{
   padding: 1rem 15px 0 15px;

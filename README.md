@@ -2,7 +2,8 @@
 
 Selene is a minimal open source ghost theme.
 
-
+![Blog image](/blog.png?raw=true)
+![Blog image](/post.png?raw=true)
 
 ## Demo
 

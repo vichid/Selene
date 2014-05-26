@@ -20,6 +20,7 @@ You can view a live demo at [blog.vicdev.me.uk](http://blog.vicdev.me.uk/).
 * Animations created with animate.css.
 * Syntax highlight with autoloader.
 * Integrated Google Analytics.
+* Icons provided by Fontawesome.
 
 
 ## Install

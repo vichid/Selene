@@ -1,0 +1,118 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+<main class="content" role="main">
+
+    <article class="{{post_class}}">
+
+        {{! Each post has the blog logo at the top, with a link back to the home page }}
+        <header class="post-header">
+            <a class="blog-logo" href="{{@blog.url}}">
+                {{#if @blog.logo}}
+                    <img class="animated fadeInDown" src="{{@blog.logo}}" alt="Blog Logo" />
+                {{else}}
+                    <span class="blog-title">{{@blog.title}}</span>
+                {{/if}}
+            </a>
+        </header>
+
+        {{! Everything inside the #post tags pulls data from the post }}
+        {{#post}}
+
+            <span class="post-meta"><h1 class="post-title">{{{title}}}</h1></span>
+            <span class="time-wrapper-post"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time></span>
+            <ul class="tags post-tags">
+                {{#foreach tags}}
+                    <li class="tag">{{name}}</li>
+                {{/foreach}}
+            </ul>
+
+            <section class="post-content">
+                {{content}}
+            </section>
+
+            <footer class="post-footer">
+
+                <section class="author">
+                    <h4>{{author.name}}</h4>
+                    <p>{{author.bio}}</p>
+                    <ul class="author-meta clearfix">
+                        {{#if author.location}}<li>{{author.location}}</li>{{/if}}
+                        {{#if author.website}}<li><a href="{{author.website}}">{{author.website}}</a></li>{{/if}}
+                    </ul>
+                </section>
+
+                <section class="share">
+                    <a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
+                        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                        <i class="fa fa-twitter-square"></i>
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                    <a href="https://plus.google.com/share?url={{url absolute="true"}}"
+                       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                        <i class="fa fa-google-plus-square"></i>
+                    </a>
+                    <a href="http://www.linkedin.com/shareArticle?mini=true&url={{url absolute="true"}}&title={{encode title}}"
+                       onclick="window.open(this.href, 'linkedin-share', 'width=490,height=530');return false;">
+                        <i class="fa fa-linkedin-square"></i>
+                    </a>
+                </section>
+
+            </footer>
+
+        {{/post}}
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_shortname = 'blogvicdev'; // required: replace example with your forum shortname
+            var disqus_identifier = '{{post.id}}'; // make sure to use the post.id as an identifier, otherwise disqus will use the pages url per default, which might be problematic...
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </article>
+</main>
+<script type="text/javascript" src="{{asset "../bower_components/SyntaxHighlighter/scripts/XRegExp.js"}}"></script>
+<script type="text/javascript" src="{{asset "../bower_components/SyntaxHighlighter/scripts/shCore.js"}}"></script>
+<script type="text/javascript" src="{{asset "../bower_components/SyntaxHighlighter/scripts/shAutoloader.js"}}"></script>
+<link type="text/css" rel="stylesheet" href="{{asset "../bower_components/SyntaxHighlighter/styles/shCoreEclipse.css"}}"/>
+<script type="text/javascript">
+SyntaxHighlighter.autoloader(
+    'applescript            ../bower_components/SyntaxHighlighter/scripts/shBrushAppleScript.js',
+    'actionscript3 as3      ../bower_components/SyntaxHighlighter/scripts/shBrushAS3.js',
+    'bash shell             ../bower_components/SyntaxHighlighter/scripts/shBrushBash.js',
+    'coldfusion cf          ../bower_components/SyntaxHighlighter/scripts/shBrushColdFusion.js',
+    'cpp c                  ../bower_components/SyntaxHighlighter/scripts/shBrushCpp.js',
+    'c# c-sharp csharp      ../bower_components/SyntaxHighlighter/scripts/shBrushCSharp.js',
+    'css                    ../bower_components/SyntaxHighlighter/scripts/shBrushCss.js',
+    'delphi pascal          ../bower_components/SyntaxHighlighter/scripts/shBrushDelphi.js',
+    'diff patch pas         ../bower_components/SyntaxHighlighter/scripts/shBrushDiff.js',
+    'erl erlang             ../bower_components/SyntaxHighlighter/scripts/shBrushErlang.js',
+    'groovy                 ../bower_components/SyntaxHighlighter/scripts/shBrushGroovy.js',
+    'haxe hx                ../bower_components/SyntaxHighlighter/scripts/shBrushHaxe.js',
+    'java                   ../bower_components/SyntaxHighlighter/scripts/shBrushJava.js',
+    'jfx javafx             ../bower_components/SyntaxHighlighter/scripts/shBrushJavaFX.js',
+    'js jscript javascript  ../bower_components/SyntaxHighlighter/scripts/shBrushJScript.js',
+    'perl pl                ../bower_components/SyntaxHighlighter/scripts/shBrushPerl.js',
+    'php                    ../bower_components/SyntaxHighlighter/scripts/shBrushPhp.js',
+    'text plain             ../bower_components/SyntaxHighlighter/scripts/shBrushPlain.js',
+    'py python              ../bower_components/SyntaxHighlighter/scripts/shBrushPython.js',
+    'ruby rails ror rb      ../bower_components/SyntaxHighlighter/scripts/shBrushRuby.js',
+    'sass scss              ../bower_components/SyntaxHighlighter/scripts/shBrushSass.js',
+    'scala                  ../bower_components/SyntaxHighlighter/scripts/shBrushScala.js',
+    'sql                    ../bower_components/SyntaxHighlighter/scripts/shBrushSql.js',
+    'vb vbnet               ../bower_components/SyntaxHighlighter/scripts/shBrushVb.js',
+    'xml xhtml xslt html    ../bower_components/SyntaxHighlighter/scripts/shBrushXml.js'
+);
+SyntaxHighlighter.all();
+</script>

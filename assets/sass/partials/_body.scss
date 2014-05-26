@@ -1,0 +1,6 @@
+.content{
+  @include box-shadow(0px 0.5em 3em rgba(0, 0, 0, 0.5));
+  position:relative;
+  z-index: 2;
+  @include background(image-url("noisy-texture-200x200-o4-d17-c-fefefe-t0.png"));
+}

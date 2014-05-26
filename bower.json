@@ -1,0 +1,21 @@
+{
+  "name": "vic",
+  "version": "0.0.0",
+  "authors": [
+    "vichid <victor.hidalgo.lorenzo@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "~3.1.1",
+    "skrollr": "~0.6.24",
+    "SyntaxHighlighter": "~3.0.83"
+  }
+}

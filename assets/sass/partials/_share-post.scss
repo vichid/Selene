@@ -1,0 +1,30 @@
+$faSize: 0.75em;
+.post-footer{
+  .share{
+    width:auto;
+    top: 0rem;
+    .fa{
+      font-size: $faSize;
+      @include transition-property(font-size);
+      @include transition-duration(.2s);
+      width: 10px;
+      &:hover{
+        font-size: $faSize + 0.25em;
+      }
+    }
+  }
+}
+.fa-twitter-square{
+  color: $facebook;
+}
+.fa-facebook-square{
+  color: $twitter;
+}
+
+.fa-google-plus-square{
+  color: $googleplus;
+}
+
+.fa-linkedin-square{
+  color: $linkedin;
+}

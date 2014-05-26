@@ -1,0 +1,35 @@
+.post{
+  margin-top: 5rem;
+  padding-bottom: 1rem;
+  background-color: white;
+  border-top: 3px solid $appleGreen;
+  @include box-shadow(0px 5px 15px 0px rgba(50, 50, 50, 0.5));
+  &:last-child{
+    margin-bottom:150px;
+    &:after{
+      display: none;
+    }
+  }
+}
+.time-wrapper-post{
+  float: right;
+  padding-right:15px;
+  border-bottom: 2px solid $appleGreen;
+}
+.post-title{
+  padding: 0 15px 10px 15px;
+}
+.post-content{
+  padding: 15px;
+}
+.post-footer{
+  padding: 1rem 15px 0 15px;
+}
+.post-meta{
+  color: #333;
+}
+@media screen and (max-width: 660px) {
+  .post{
+    margin-left: 0 !important;
+  }
+}

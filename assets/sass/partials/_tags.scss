@@ -1,0 +1,63 @@
+// http://codepen.io/wbeeftink/pen/dIaDH
+.tags {
+  list-style: none;
+  margin: 0 0 0 10px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.tags li {
+  float: left;
+  cursor: pointer;
+}
+
+.tags .tag {
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+  color: #999 !important;
+  display: inline-block;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  @include transition-property(color);
+  @include transition-duration(0.2s);
+  font-size: 14px;
+}
+
+.tag::before {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 8px;
+}
+
+.tag::after {
+  background: #fff;
+  border-bottom: 12px solid transparent;
+  border-left: 10px solid #eee;
+  border-top: 12px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -1px;
+}
+
+.tags .tag:hover {
+  background-color: $tagColor;
+  color: white !important;
+}
+
+.tag:hover::after {
+  border-left-color: $tagColor;
+}
+.post-tags{
+  margin-left: 15px;
+}

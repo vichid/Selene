@@ -1,0 +1,29 @@
+$faSize: 0.9em;
+.black{
+  color: black;
+}
+.social{
+  position: fixed;
+  top: 0;
+  right: 0;
+  float: right;
+  padding: 15px;
+  z-index: 3;
+  li{
+    a{
+      @include transition-property(color);
+      @include transition-duration(.5s);
+      @include transition-timing-function(ease-in);
+      .fa.fa-stack-1x{
+        font-size: $faSize;
+        @include transition-property(font-size);
+        @include transition-duration(.2s);
+      }
+      &:hover{
+        .fa.fa-stack-1x{
+          font-size: $faSize + 0.2em;
+        }
+      }
+    }
+  }
+}

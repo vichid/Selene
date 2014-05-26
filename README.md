@@ -21,17 +21,11 @@ You can view a live demo at [blog.vicdev.me.uk](http://blog.vicdev.me.uk/).
 
 ## Install
 1. `cd *ghost-path*/content/themes`
-2. `git clone git@github.com:vichid/Selene.git`
-3. `bower install || say awesome`
-4. `cd *ghost-path*`
-4. `npm start`
+2. `git clone git@github.com:vichid/Selene.git && cd Selene`
+3. `bower install && say awesome`
 
 
 For best performance, select (4>)%2 == 0 posts per page.
-
-
-
-
 
 
 ## Copyright & License

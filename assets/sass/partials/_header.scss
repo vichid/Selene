@@ -2,7 +2,9 @@
   height:40%;
   padding: 0;
   margin-bottom: 0;
-  background: $appleGreen no-repeat center center;
+  background: $appleGreen;
+  background-size: cover;
+  background-position: 50%;
 }
 .site-head-content{
   text-align: left;

@@ -2,10 +2,18 @@
   height:40%;
   padding: 0;
   margin-bottom: 0;
+  background: $appleGreen no-repeat center center;
 }
 .site-head-content{
   text-align: left;
 }
 .inner{
   max-width: 800px;
+}
+.blog-description{
+  font-size: 2.8rem;
+  color: white;
+}
+.blog-title{
+  @include text-shadow(3px 3px 0px rgba(0,0,0,0.15));
 }

@@ -3,6 +3,8 @@ $faSize: 0.9em;
   color: black;
 }
 .social{
+  list-style: none;
+  margin: 0;
   position: fixed;
   top: 0;
   right: 0;
@@ -11,6 +13,7 @@ $faSize: 0.9em;
   z-index: 3;
   li{
     a{
+      color: $lightGray2;
       @include transition-property(color);
       @include transition-duration(.5s);
       @include transition-timing-function(ease-in);

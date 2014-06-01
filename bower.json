@@ -15,7 +15,6 @@
   ],
   "dependencies": {
     "animate.css": "~3.1.1",
-    "skrollr": "~0.6.24",
     "SyntaxHighlighter": "~3.0.83"
   }
 }

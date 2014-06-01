@@ -1,0 +1,32 @@
+html,body,div,span,a{
+    font-family:$typography ;
+}
+body, button, input, select, textarea{
+    color: $typoColor;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+    font-family: $typography ;
+    font-size: 14px;
+    font-weight: normal;
+}
+h1,h2,h3,h4,h5,h6{
+    clear: both;
+    line-height: 2.5;
+    letter-spacing: 0px;
+    text-indent: 0px;
+    font-weight: normal;
+}
+h1{
+  font-weight: lighter;
+}
+h2{
+    font-size: 18px;
+    color: black;
+}
+.post-title{
+    line-height: 1.2;
+    font-size: 40px;
+}
+p{
+  margin-bottom: 1.5em;
+}

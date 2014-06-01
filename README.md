@@ -3,7 +3,6 @@
 Selene is a minimal open source ghost theme with a timeline style and infinite scrolling.
 
 ![Blog image](/blog.png?raw=true)
-![Blog image](/post.png?raw=true)
 
 ## Demo
 
@@ -16,7 +15,6 @@ You can view a live demo at [blog.vicdev.me.uk](http://blog.vicdev.me.uk/).
 * Infinite scroll.
 * Automatic post scroll with keys `j`/`k`.
 * Sass powered.
-* Parallax effects.
 * Animations created with animate.css.
 * Syntax highlight with autoloader.
 * Integrated Google Analytics.

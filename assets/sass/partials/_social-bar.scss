@@ -1,6 +1,6 @@
 $faSize: 0.9em;
 .black{
-  color: black;
+  color: white;
 }
 .social{
   list-style: none;
@@ -13,7 +13,7 @@ $faSize: 0.9em;
   z-index: 3;
   li{
     a{
-      color: $lightGray2;
+      color: $appleGreen;
       @include transition-property(color);
       @include transition-duration(.5s);
       @include transition-timing-function(ease-in);

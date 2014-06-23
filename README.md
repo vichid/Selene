@@ -6,7 +6,7 @@ Selene is a minimal open source ghost theme with a timeline style and infinite s
 
 ## Demo
 
-You can view a live demo at [blog.vicdev.me.uk](http://blog.vicdev.me.uk/).
+You can view a live demo at [selene.vicdev.me.uk](http://selene.vicdev.me.uk/).
 
 ##Features
 

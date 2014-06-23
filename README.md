@@ -19,6 +19,7 @@ You can view a live demo at [blog.vicdev.me.uk](http://blog.vicdev.me.uk/).
 * Syntax highlight with autoloader.
 * Integrated Google Analytics.
 * Icons provided by Fontawesome.
+* Fancybox for overlayed images.
 
 
 ## Install

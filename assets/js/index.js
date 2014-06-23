@@ -131,5 +131,9 @@
 /* Fluidbox */
 (function ($) {
     "use strict";
-    $('a[rel="lightbox"]').fluidbox();
+    $(document).ready(function(){
+
+      $(".fancybox").fancybox();
+
+    });
 }(jQuery));

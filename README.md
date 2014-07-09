@@ -25,7 +25,8 @@ You can view a live demo at [selene.vicdev.me.uk](http://selene.vicdev.me.uk/).
 ## Install
 1. `cd *ghost-path*/content/themes`
 2. `git clone git@github.com:vichid/Selene.git && cd Selene`
-3. `bower install && say awesome`
+3. `bower install`
+4. `grunt && say awesome`
 
 
 For best performance, select (4>)%2 == 0 posts per page.

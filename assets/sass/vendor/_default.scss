@@ -907,12 +907,10 @@ margin on the iframe, cause it breaks stuff. */
 
 /* CSS tooltip saying "Subscribe!" - initially hidden */
 .tooltip {
-    opacity:0;
+    opacity:1;
     display: inline-block;
     padding: 4px 8px 5px 8px;
     position:absolute;
-    top: -23px;
-    left: -21px;
     color: rgba(255,255,255,0.9);
     font-size: 1.1rem;
     line-height: 1em;
@@ -920,22 +918,6 @@ margin on the iframe, cause it breaks stuff. */
     background: #50585D;
     border-radius:20px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-    transition: opacity 0.3s ease, top 0.3s ease;
-}
-
-/* The little chiclet arrow under the tooltip, pointing down */
-.tooltip:after {
-    content:"";
-    border-width:5px 5px 0 5px;
-    border-style:solid;
-    border-color: #50585D transparent;
-    display:block;
-    position:absolute;
-    bottom:-4px;
-    left:50%;
-    margin-left:-5px;
-    z-index: 220;
-    width:0;
 }
 
 /* On hover, show the tooltip! */

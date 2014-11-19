@@ -32,6 +32,21 @@ You can view a live demo at [selene.vicdev.me.uk](http://selene.vicdev.me.uk/).
 For best performance, select (4>)%2 == 0 posts per page.
 
 
+## Configuration
+
+To configure all the social links you must go to partials/links.hbs and then override this parameters (@):
+
+```
+<li data-toggle="tooltip" data-placement="left" title="@YourTooltipTitle">
+	<a href="@YourLink" target="_blank" >
+		<span class="fa-stack fa-lg">
+			<i class="fa fa-circle fa-stack-2x"></i><i class="fa @YourFontawesomeIcon fa-stack-1x black"></i>
+		</span>
+	</a>
+</li>
+```
+
+
 ## Copyright & License
 
 [MIT](http://opensource.org/licenses/MIT) @ Victor Hidalgo Lorenzo

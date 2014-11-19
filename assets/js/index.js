@@ -23,6 +23,8 @@
         casperFullImg();
         $(window).smartresize(casperFullImg);
 
+        //initialize tooltips
+        $('[data-toggle="tooltip"]').tooltip();
     });
 
 }(jQuery));

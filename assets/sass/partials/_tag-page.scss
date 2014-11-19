@@ -1,0 +1,28 @@
+.tag-archive-header{
+  margin: 0px auto;
+  border-bottom: none;
+  &:after{
+    content: none;
+  }
+}
+
+.tag-template{
+  .timeline{
+    padding-top: 0;
+
+    & > li{
+      padding-top: 0;
+    }
+    &:before{
+      top: 5px;
+    }
+  }
+
+
+
+  .post{
+    margin-top:0px;
+    margin: 0 auto;
+  }
+
+}

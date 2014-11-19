@@ -8,7 +8,7 @@
     <div class="vertical animated fadeInLeft">
         <div class="site-head-content inner">
             {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-            <h1 class="blog-title">{{@blog.title}}</h1>
+            <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
             <h2 class="blog-description">{{@blog.description}}</h2>
         </div>
     </div>
@@ -36,7 +36,7 @@
                     <span class="flag"><a href="{{url}}">{{{title}}}</a></span>
                     <ul class="tags">
                         {{#foreach tags}}
-                            <li class="tag">{{name}}</li>
+                            <a href="{{url}}"><li class="tag">{{name}}</li></a>
                         {{/foreach}}
                     </ul>
                 </div>

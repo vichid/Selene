@@ -17,7 +17,11 @@ h1,h2,h3,h4,h5,h6{
     font-weight: normal;
 }
 h1{
-  font-weight: lighter;
+    font-weight: lighter;
+    a{
+        color: white;
+        text-decoration: none;
+    }
 }
 h2{
     font-size: 18px;
@@ -31,7 +35,7 @@ h6{
     font-size: 40px;
 }
 p{
-  margin-bottom: 1.5em;
+    margin-bottom: 1.5em;
 }
 div.syntaxhighlighter{
     font-size: 0.90em !important;
